@@ -1,9 +1,9 @@
 import math as maths
 def primenumbers():
     n=int(input())
-    print('root :', int(maths.sqrt(n)))
-    if(n==1):
-        print("1 is neither prime nor composite")
+    if(n == 1 or n == 0):
+        print(f"{n} is neither prime nor composite")
+        return n
     for i in range(2,int(maths.sqrt(n))+1):
         if(n%i==0):
             print("not prime")
